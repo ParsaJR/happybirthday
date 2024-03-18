@@ -1,13 +1,13 @@
 // trigger to play music in the background with sweetalert
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
+        title: 'مایل به موسیقی تولد ؟',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes',
-        cancelButtonText: 'No',
+        confirmButtonText: 'اره',
+        cancelButtonText: 'نه',
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
@@ -29,9 +29,7 @@ const animationTimeline = () => {
         .split("")
         .join("</span><span>")}</span>`;
 
-    hbd.innerHTML = `<span>${hbd.innerHTML
-        .split("")
-        .join("</span><span>")}</span>`;
+
 
     const ideaTextTrans = {
         opacity: 0,
@@ -205,7 +203,7 @@ const animationTimeline = () => {
         opacity: 0,
     })
     .staggerFrom(
-        ".wish-hbd span",
+        ".wish-hbd",
         0.7, {
             opacity: 0,
             y: -50,
